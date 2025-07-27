@@ -5,8 +5,8 @@ const doc = {
     title: 'Events API',
     description: 'Project2'
   },
-  host: 'localhost:5000',
-  schemes:['http', 'https']
+  host: 'cse341-project2-17mp.onrender.com',
+  schemes:['https']
 };
 
 const outputFile = './swagger.json';
