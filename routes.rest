@@ -1,13 +1,13 @@
-### Get all users
+### Get all events
 GET http://localhost:5000/events
 
 ###
 
-### Get users by ID
+### Get events by ID
 GET http://localhost:5000/events/6884f07f424b3ca297953e96
 ###
 
-### Create User
+### Create event
 POST http://localhost:5000/events HTTP/1.1
 Content-Type: application/json
 
@@ -23,7 +23,7 @@ Content-Type: application/json
 
 ###
 
-### Update User
+### Update event
 PUT http://localhost:5000/events/68853b2f08f5de2c79b0b4db HTTP/1.1
 Content-Type: application/json
 
@@ -39,5 +39,52 @@ Content-Type: application/json
 
 ###
 
+### Delete event
+DELETE http://localhost:5000/events/68853fd902f86d65d443399e HTTP/1.1\
+
+
+
+### Get all users
+GET http://localhost:5000/users
+
+###
+
+### Get users by ID
+GET http://localhost:5000/users/688a6c5a5a72d3f1e9f17e7d
+
+###
+
+### Create User
+POST http://localhost:5000/users HTTP/1.1
+Content-Type: application/json
+
+{
+  "firstName": "Mafo",
+  "lastName": "Kisanga",
+  "email": "kis",
+  "password": "0000",
+  "phone": "+243900000000"
+}
+
+###
+
+### Update User
+PUT http://localhost:5000/users/688a6c5a5a72d3f1e9f17e7d HTTP/1.1
+Content-Type: application/json
+
+{
+   "firstName": "Maseo",
+  "lastName": "Kisanga",
+  "email": "kis@example.com",
+  "password": "0000",
+  "phone": "+243900000000"
+}
+
+###
+
 ### Delete User
-DELETE http://localhost:5000/events/68853fd902f86d65d443399e HTTP/1.1
+DELETE http://localhost:5000/users/688a6c5a5a72d3f1e9f17e7d HTTP/1.1
+
+
+
+
